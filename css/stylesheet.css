@@ -29,7 +29,7 @@ body {
     background-color: var(--fondo-principal);
     color: var(--texto);
     text-align: center;
-    border-bottom: solid 2px var(--principales);
+    border-bottom: solid 2px var(--destacados);
 }
 
 #areas {
@@ -41,7 +41,7 @@ body {
     padding: 1rem 2rem;
 }
 
-.fa-whatsapp, .fa-instagram, .fa-user, .fa-shopping-cart, .fa-magnifying-glass{
+.fa-whatsapp, .fa-instagram, .fa-user, .fa-shopping-cart, .fa-magnifying-glass, .fa-angle-left, .fa-angle-right{
     color: var(--destacados);
 }
 
@@ -59,7 +59,7 @@ body {
     padding: 10px 250px 10px 15px;
     border-radius: 30px;
     outline: none;
-    border: 2px solid var(--destacados);
+    border: solid 2px var(--destacados);
     font-size: 16px;
 }
 
@@ -78,6 +78,61 @@ body {
     position: relative;
     width: 100%;
     max-width: 600px;
+}
+
+/*Estilos navegacion*/
+
+#topnav {
+    display: inline-flex;
+    background-color: var(--fondo-principal);
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-items {
+    padding: 1rem 4%;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-items:hover {
+    border-bottom: solid 2px var(--destacados);
+}
+
+.nav-link {
+    color: var(--texto);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*Estilos dropdown*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: calc(100% + 2px);
+    min-width: 100%;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.drop-link {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--fondo-principal);
+    padding: 1rem;
+    color: var(--texto);
+}
+
+.drop-link:hover {
+    /*background-color: var(--secundarios);*/
+    border-left: solid 4px var(--destacados);
+}
+
+.nav-items:hover .dropdown-content {
+    display: block;
 }
 
 /*Estilos footer*/
