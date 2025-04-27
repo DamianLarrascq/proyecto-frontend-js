@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Barbershop</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <script src="https://kit.fontawesome.com/276d8ed360.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -11,42 +12,33 @@
     <div id="areas">
         <div id="area-logo">
             <a href="index.html">
-                <img src="./img/logo%20para%20barberia.PNG" alt="" width="150" height="150"/>
+                <img src="./img/barber_logo.PNG" alt="" width="200" height="150"/>
             </a>
         </div>
         <div id="area-search">
             <form action="">
-                <input
-                        type="text"
-                        name="searchinput"
-                        id="searchinput"
-                        placeholder="Búsqueda"
-                />
-                <div type="submit" id="btnsub">Buscar</div>
+                <div id="search-container">
+                    <input
+                            type="text"
+                            name="searchinput"
+                            id="search-input"
+                            placeholder="Búsqueda"
+                    />
+                    <button type="submit" class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
             </form>
         </div>
         <div id="area-items">
-            <div id="area-redes">
-                <div class="info">Nuestras redes</div>
-                <div class="btn-redes">
-                    <a href="">
-                        <img src="./img/whatsapp.png" alt="" width="50" height="50"/>
-                    </a>
-                </div>
-                <div class="btn-redes">
-                    <a href="">
-                        <img src="./img/instagram.png" alt="" width="50" height="50"/>
-                    </a>
-                </div>
-            </div>
             <div id="area-users">
                 <a href="">
-                    <img src="./img/usuario.png" alt="" width="50" height="50"/>
+                    <i class="fa-regular fa-user fa-2x"></i>
                 </a>
             </div>
             <div id="area-cart">
                 <a href="">
-                    <img src="./img/carrito-de-compras.png" alt="" width="50" height="50"/>
+                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
                 </a>
             </div>
         </div>

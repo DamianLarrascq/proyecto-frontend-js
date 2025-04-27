@@ -1,0 +1,88 @@
+/*Estilos generales*/
+
+:root {
+    --fondo-principal: #1C1C1C;
+    --principales: #8B0000;
+    --secundarios: #444444;
+    --texto: #F5F5F5;
+    --destacados: #C9A343;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f7f9fc;
+}
+
+/*Estilos header*/
+
+#mainheader {
+    background-color: var(--fondo-principal);
+    color: var(--texto);
+    text-align: center;
+    border-bottom: solid 2px var(--principales);
+}
+
+#areas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.fa-whatsapp, .fa-instagram, .fa-user, .fa-shopping-cart, .fa-magnifying-glass{
+    color: var(--destacados);
+}
+
+#area-logo {
+    display: inline-flex;
+}
+
+#area-items{
+    display: flex;
+    gap: 20px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px 250px 10px 15px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid var(--destacados);
+    font-size: 16px;
+}
+
+.search-button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+/*Estilos footer*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
