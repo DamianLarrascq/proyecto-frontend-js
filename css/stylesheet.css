@@ -110,7 +110,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    z-index: 1;
+    z-index: 20;
     top: calc(100% + 2px);
     min-width: 100%;
     left: 0;
@@ -127,12 +127,58 @@ body {
 }
 
 .drop-link:hover {
-    /*background-color: var(--secundarios);*/
     border-left: solid 4px var(--destacados);
 }
 
 .nav-items:hover .dropdown-content {
     display: block;
+}
+
+/*Estilos slideshow*/
+
+.slideshow-container {
+    max-width: 1920px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.slides {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slides.active {
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    z-index: 10;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev i, .next i {
+    pointer-events: none;
 }
 
 /*Estilos footer*/
