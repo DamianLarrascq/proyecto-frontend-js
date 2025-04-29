@@ -4,49 +4,51 @@
     <meta charset="UTF-8">
     <title>Barbershop</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <script src="https://kit.fontawesome.com/276d8ed360.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+<div class="top-header">
+    <div class="top-header-text">
+        <p>Envios gratis a todo el país</p>
+    </div>
+</div>
 
 <header id="mainheader">
     <div id="areas">
         <div id="area-logo">
             <a href="index.html">
-                <img src="./img/logo%20para%20barberia.PNG" alt="" width="150" height="150"/>
+                <img src="./img/barber_logo.PNG" alt="" width="200" height="150"/>
             </a>
         </div>
         <div id="area-search">
             <form action="">
-                <input
-                        type="text"
-                        name="searchinput"
-                        id="searchinput"
-                        placeholder="Búsqueda"
-                />
-                <div type="submit" id="btnsub">Buscar</div>
+                <div id="search-container">
+                    <input
+                            type="text"
+                            name="searchinput"
+                            id="search-input"
+                            placeholder="Búsqueda"
+                    />
+                    <button type="submit" class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
             </form>
         </div>
         <div id="area-items">
-            <div id="area-redes">
-                <div class="info">Nuestras redes</div>
-                <div class="btn-redes">
-                    <a href="">
-                        <img src="./img/whatsapp.png" alt="" width="50" height="50"/>
-                    </a>
-                </div>
-                <div class="btn-redes">
-                    <a href="">
-                        <img src="./img/instagram.png" alt="" width="50" height="50"/>
-                    </a>
-                </div>
-            </div>
             <div id="area-users">
                 <a href="">
-                    <img src="./img/usuario.png" alt="" width="50" height="50"/>
+                    <i class="fa-regular fa-user fa-2x"></i>
                 </a>
             </div>
             <div id="area-cart">
                 <a href="">
-                    <img src="./img/carrito-de-compras.png" alt="" width="50" height="50"/>
+                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
@@ -55,106 +57,127 @@
 
 <nav id="topnav">
 
-    <div class="navItems">
-        <a href="">Tijeras & Navajas</a>
+    <div class="nav-items">
+        <a href="" class="nav-link">Tijeras & Navajas</a>
         <div class="dropdown-content">
-            <a href="">Tijeras</a>
-            <a href="">Navajas</a>
+            <a href="" class="drop-link">Tijeras</a>
+            <a href="" class="drop-link">Navajas</a>
         </div>
     </div>
 
-    <div class="navItems">
-        <a href="">Máquinas & Partes</a>
+    <div class="nav-items">
+        <a href="" class="nav-link">Máquinas & Partes</a>
         <div class="dropdown-content">
-            <a href="">Afeitadoras</a>
-            <a href="">Clippers</a>
-            <a href="">Combos</a>
-            <a href="">Cuchillas</a>
-            <a href="">Guías de Alza</a>
-            <a href="">Mantenimiento</a>
-            <a href="">Terminaciones</a>
-            <a href="">Trimmers</a>
+            <a href="" class="drop-link">Afeitadoras</a>
+            <a href="" class="drop-link">Clippers</a>
+            <a href="" class="drop-link">Combos</a>
+            <a href="" class="drop-link">Cuchillas</a>
+            <a href="" class="drop-link">Guías de Alza</a>
+            <a href="" class="drop-link">Mantenimiento</a>
+            <a href="" class="drop-link">Terminaciones</a>
+            <a href="" class="drop-link">Trimmers</a>
         </div>
     </div>
 
-    <div class="navItems">
-        <a href="">Equipamientos</a>
+    <div class="nav-items">
+        <a href="" class="nav-link">Equipamientos</a>
         <div class="dropdown-content">
-            <a href="">Ayudantes y Taburetes</a>
-            <a href="">Combos</a>
-            <a href="">Lavacabezas</a>
-            <a href="">Poste Barbero</a>
-            <a href="">Sillones</a>
+            <a href="" class="drop-link">Ayudantes y Taburetes</a>
+            <a href="" class="drop-link">Combos</a>
+            <a href="" class="drop-link">Lavacabezas</a>
+            <a href="" class="drop-link">Poste Barbero</a>
+            <a href="" class="drop-link">Sillones</a>
         </div>
     </div>
 
-    <div class="navItems">
-        <a href="">Accesorios</a>
+    <div class="nav-items">
+        <a href="" class="nav-link">Accesorios</a>
         <div class="dropdown-content">
-            <a href="">Brochas</a>
-            <a href="">Cabezas</a>
-            <a href="">Capas</a>
-            <a href="">Delantales</a>
-            <a href="">Espejos</a>
-            <a href="">Maletines y Portaherramientas</a>
-            <a href="">Quita Pelo</a>
-            <a href="">Rociadores</a>
-            <a href="">Toallas</a>
-            <a href="">Varios</a>
+            <a href="" class="drop-link">Brochas</a>
+            <a href="" class="drop-link">Cabezas</a>
+            <a href="" class="drop-link">Capas</a>
+            <a href="" class="drop-link">Delantales</a>
+            <a href="" class="drop-link">Espejos</a>
+            <a href="" class="drop-link">Maletines y Portaherramientas</a>
+            <a href="" class="drop-link">Quita Pelo</a>
+            <a href="" class="drop-link">Rociadores</a>
+            <a href="" class="drop-link">Toallas</a>
+            <a href="" class="drop-link">Varios</a>
         </div>
     </div>
 
-    <div class="navItems">
-        <a href="">Herramientas</a>
+    <div class="nav-items">
+        <a href="" class="nav-link">Herramientas</a>
         <div class="dropdown-content">
-            <a href="">Cepillos</a>
-            <a href="">Peines</a>
-            <a href="">Planchas</a>
-            <a href="">Secadores</a>
+            <a href="" class="drop-link">Cepillos</a>
+            <a href="" class="drop-link">Peines</a>
+            <a href="" class="drop-link">Planchas</a>
+            <a href="" class="drop-link">Secadores</a>
         </div>
     </div>
 
-    <div class="navItems"   >
-        <a href="">Productos</a>
+    <div class="nav-items"   >
+        <a href="" class="nav-link">Productos</a>
         <div class="dropdown-content">
-            <a href="">Barba</a>
-            <a href="">Cabello</a>
-            <a href="">Corporal</a>
-            <a href="">Facial</a>
+            <a href="" class="drop-link">Barba</a>
+            <a href="" class="drop-link">Cabello</a>
+            <a href="" class="drop-link">Corporal</a>
+            <a href="" class="drop-link">Facial</a>
         </div>
     </div>
 
 </nav>
 
+<div class="slideshow-container" id="slideshow">
+    <div class="slides">
+        <img src="./img/slideshow/slide1.webp" alt="" style="width: 100%">
+    </div>
+    <div class="slides">
+        <img src="./img/slideshow/slide2.webp" alt="" style="width: 100%">
+    </div>
+    <div class="slides">
+        <img src="./img/slideshow/slide3.webp" alt="" style="width: 100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">
+        <i class="fa-solid fa-angle-left fa-2x"></i>
+    </a>
+    <a class="next" onclick="plusSlides(1)">
+        <i class="fa-solid fa-angle-right fa-2x"></i>
+    </a>
+</div>
+
 <div id="row">
     <h2 id="header-cat">Categorías destacadas</h2>
+
     <div class="column">
         <div class="card">
-            <a href=""><i class=""></i></a>
-            <div class="card-title">Tijeras & Navajas</div>
+            <img src="./img/cat-destacadas/tijeras.webp" class="img-categorias">
+            <button type="button" class="card-button">Tijeras & Navajas</button>
         </div>
     </div>
 
     <div class="column">
         <div class="card">
-            <a href=""><i class=""></i></a>
-            <div class="card-title">Máquinas & Partes</div>
+            <img src="./img/cat-destacadas/maquinas.webp" class="img-categorias">
+            <button type="button" class="card-button">Maquinas & Partes</button>
         </div>
     </div>
 
     <div class="column">
         <div class="card">
-            <a href=""><i class=""></i></a>
-            <div class="card-title">Accesorios</div>
+            <img src="./img/cat-destacadas/spray.webp" class="img-categorias">
+            <button type="button" class="card-button">Accesorios</button>
         </div>
     </div>
 
     <div class="column">
         <div class="card">
-            <a href=""><i class=""></i></a>
-            <div class="card-title">Productos</div>
+            <img src="./img/cat-destacadas/productos.webp" class="img-categorias">
+            <button type="button" class="card-button">Productos</button>
         </div>
     </div>
+
 </div>
 
 <footer>
@@ -163,6 +186,7 @@
     </section>
 </footer>
 
+<script src="./js/slideShow.js"></script>
 
 </body>
 </html>
